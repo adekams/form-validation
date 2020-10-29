@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;   
+}
+* {
+    color: #131212;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: teal;
+}
+.container form {
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+}
+.container form fieldset {
+    border-radius: 5px;
+    padding: 25px 20px 10px;
+    /* margin-bottom: 10px; */
+}
+form .form-field {
+    margin-bottom: 20px;
+}
+form input {
+    width: 100%;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    outline-color: teal;
+    padding: 8px 5px;
+}
+form h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: teal;
+}
+
+form .btn {
+    background: teal;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+}
+form .btn:hover {
+    background: rgb(3, 87, 87);
+}
+form small {
+    color: red;
+}
+form .account {
+    padding: 10px;
+}
+form .account a {
+    color: teal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.success {
+    border-color: green;
+}
+.error {
+    border-color: red;    
+}
+#loader {
+    display: none;
+    font-size: 25px;
+}

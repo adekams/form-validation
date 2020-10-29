@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <form action="" method="POST" name="signupForm" id="signupForm"> 
+            <h1>Sign Up</h1>
+
+            <fieldset>
+                <legend><p>Please fill all fields provided</p></legend>
+ 
+                <div class="form-field">
+                    <input class="name" type="text" name="firstname" id="firstname" placeholder="First Name">
+                    <small class="error" aria-live="polite" id=""></small> 
+                </div>                  
+                
+                <div class="form-field">
+                    <input class="name" type="text" name="lastname" id="lastname" placeholder="Last Name">
+                    <small class="error" aria-live="polite" id=""></small>
+                </div> 
+
+                <div class="form-field">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <small class="error" aria-live="polite" id=""></small>
+                </div>
+
+                <div class="form-field">
+                    <input type="password" name="password1" id="password1" placeholder="Password">
+                    <small class="error" aria-live="polite" id=""></small>
+                </div>
+
+                <div class="form-field" >
+                    <input type="password" name="password2" id="password2" placeholder="Confirm Password">
+                    <small class="error" aria-live="polite" id=""></small>
+                </div>
+
+                <div class="form-field" data-progress-style ='indefinite'>
+                    <button class="btn" id="signup-btn">Sign Up</button>
+                    <div id="loader"><i class="fas fa-spinner fa-spin" aria-hidden="true"></i></div>
+                </div>        
+            </fieldset>
+            <p class="account">Already have an Account? <a href="login.html">Login</a></p>
+        </form>
+        
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

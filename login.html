@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        
+        <form action="" name="loginForm" id="loginForm" onsubmit="alert('Welcome')" return false> 
+            <h1>Login</h1>
+
+            <fieldset>
+                <legend><p>Please fill all fields provided</p></legend>
+
+                <div class="form-field">
+
+                    <input type="email" name="loginEmail" id="loginEmail" placeholder="Email" required>
+                </div>
+
+                <div class="form-field">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="form-field">
+                    <input class="btn" id="login" type="submit" value="Login">
+                </div>        
+            </fieldset>
+
+            <p class="account">Don't have an Account yet? <a href="index.html">Sign Up</a></p>
+        </form>
+    </div>
+
+    <script>
+        const buttonState= () => {
+            let d  = document, [inputs, btn] = [
+                d.querySelectorAll('input'),
+                d.querySelector('.btn')
+            ]
+            btn.disabled = true
+
+            for (i=0; i < inputs.length; i++) {
+                inputs[i].addEventListener('input', () => {
+                    let values = []
+                    inputs.forEach(input => values.push(input.value))
+                    btn.disabled = values.includes('')
+                })
+            }
+        }
+        buttonState()
+    </script>
+</body>
+</html>
